@@ -52,3 +52,9 @@ Route::get('user/{id}', 'UserController@show');
 Route::get('ThamSo/{id}', 'MyFirstController@XinChao');
 
 Route::get('MyRequest', 'MyFirstController@GetURL');
+
+Route::get('getForm', function(){
+    return view('postForm');
+});
+
+Route::post('postForm',['as' => 'postForm', 'uses' => 'MyFirstController@postForm']);

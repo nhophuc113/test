@@ -14,4 +14,11 @@ class MyFirstController extends Controller
     public function GetURL(Request $request){
         return $request->url();
     }
+
+    public function postForm(Request $request){
+        echo 'ss';
+        die;
+       // echo $request->HoTen;
+
+    }
 }
